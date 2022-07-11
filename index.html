@@ -5,42 +5,86 @@
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   </head>
   <body>
-    <form action="!#" method="post"></form>
-<div>
-    <input placeholder="Username" type="text" name="username" value="" />
-<div/>
-    <div>
-    <input placeholder="password" type="password" name="username" id="">
-  </div>
-  <div>
-<p><input checked type="radio" name="beer" value="lager"> Lager beer</p>
-<p><input type="radio" name="beer" value="dark"> Dark beer</p>
-  </div>
-<br/>
-  <div>
-    <p><input type="radio" name="beer2" value="lager"> Lager beer</p>
-    <p><input checked type="radio" name="beer2  " value="dark"> Dark beer</p>
-     <br/>
-  </div>
+    <form action="#" method="get">
       <div>
-        <p><input checked type="checkbox" name="car" value="yes"> Do you have a car?</p>
-        <p><input type="checkbox" name="car2" value="yes"> Do you have a car?</p>
-        <p><input type="checkbox" name="car3" value="yes"> Do you have a car?</p>
-        <p><input checked type="checkbox" name="car4" value="yes"> Do you have a car?</p>
+        <p>Name</p>
+        <input
+          placeholder="username"
+          tabindex="1"
+          name="username"
+          type="text"
+        />
       </div>
-      <br/>
       <div>
-        <p><input type="file" name="foto" id=""></p>
+        <p>Password</p>
+        <input
+          placeholder="password"
+          tabindex="2"
+          name="password"
+          type="password"
+        />
       </div>
-      <br>
-      <textarea name="text"></textarea>
-      <br/>
-      <select name="color" >
-        <option value="red">Red</option>
-        <option selected value="yellow">Yellow</option>
-        <option value="blue">blue</option>
-      </select>
-      <button type="submit">Send</button>
-      <button type="reset">Send</button>
+      <div>
+        <p>Telefone</p>
+        <input placeholder="password" tabindex="3" name="userfone" type="tel" />
+      </div>
+      <div>
+        <p>Male</p>
+        <div>
+          <input
+            tabindex="4"
+            checked
+            type="radio"
+            name="gender"
+            value="male"
+          />Male
+        </div>
+        <div>
+          <input tabindex="4" type="radio" name="gender" value="female" />Female
+        </div>
+      </div>
+      <div>
+        <p>Property</p>
+        <div>
+          <input tabindex="5" checked type="checkbox" name="bike" value="yes" />
+          Bike
+        </div>
+        <div>
+          <input tabindex="6" type="checkbox" name="car" value="yes" /> Car
+        </div>
+        <div>
+          <input
+            tabindex="7"
+            disabled
+            type="checkbox"
+            name="House"
+            value="yes"
+          />
+          House
+        </div>
+      </div>
+      <div>
+        <p>Some info of you</p>
+        <textarea tabindex="8" name="text"></textarea>
+      </div>
+      <div>
+        <p>Choose you photo</p>
+        <input tabindex="9" type="file" name="userfoto" />
+      </div>
+      <div>
+        <p>Your favorite color</p>
+        <select tabindex="10" name="color" id="">
+          <option value="red">Red</option>
+          <option value="yellow">Yellow</option>
+          <option value="blue">blue</option>
+          <option selected value="green">Green</option>
+        </select>
+      </div>
+      <div>
+        <p>Send</p>
+        <button tabindex="11" type="submit">Send</button>
+        <button tabindex="12" type="reset">Reset</button>
+      </div>
+    </form>
   </body>
 </html>
