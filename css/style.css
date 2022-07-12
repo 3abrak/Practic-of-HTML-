@@ -9,3 +9,8 @@ span.bigred {
   font-size: 30px;
   color: green;
 }
+.block > p {
+  color: blue;
+  font-size: 15px;
+  border: 1px solid #000;
+}
