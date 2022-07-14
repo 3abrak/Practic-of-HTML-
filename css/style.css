@@ -79,15 +79,30 @@ h6 {
 }
 
 .example-block {
-  padding: 10px 20px;
-  display: block;
-  margin: 0 0 30px;
+  font-size: 50px;
+  margin: 0 0 30px 0;
+  border: 10px solid green;
+  border-radius: 0 40px 0 40px;
+  box-shadow: 5px 5px 10px 15px #000;
+  padding: 15px;
+}
+
+.example-block2 {
+  font-size: 50px;
+  opacity: 0.5;
+  margin: 30px 0 30px 0;
+}
+
+.eblock {
+  visibility: hidden;
+  font-size: 50px;
 }
 
 .example-string {
-  width: 500px;
+  outline: 2px solid #000;
+  font-size: 50px;
 }
 
 .example-image {
-  height: 100px;
+  border: 1px dotted #000;
 }
