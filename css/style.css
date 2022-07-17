@@ -82,91 +82,40 @@ body {
   padding: 30px;
 }
 
-.block {
+.text {
+  font-size: 24px;
+  line-height: 33px;
   margin: 0 0 30px 0;
 }
 
-.block p:nth-child(odd) {
-  background-color: darkorange;
+.text::first-line {
+  color: red;
 }
 
-.block p:nth-child(even) {
-  background-color: #eee;
-}
-
-.block p {
-  font-size: 18px;
-  line-height: 24px;
-  margin: 0 0 20px 0;
-}
-.link {
-  color: gold;
-}
-
-.link:hover {
-  text-decoration: underline;
+.text::first-letter {
+  font-size: 50px;
   color: blue;
 }
 
-.link:visited {
-  color: green;
-}
-
-.link:active {
-  color: blueviolet;
-}
-
-.textinput {
-  border: 1px solid #666;
-  height: 50px;
-  padding: 0 15px;
-  font-size: 18px;
-  width: 300px;
-  margin: 0 0 10px 0;
-}
-
-.textinput:focus {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.textbutton {
-  display: block;
-  width: 300px;
-  height: 50px;
-  background-color: aqua;
-  text-transform: uppercase;
-  margin: 0 0 30px 0;
-}
-
-.textbutton:hover {
-  background-color: brown;
-  color: sienna;
-}
-
-.textbutton:active {
-  background-color: #eee;
-}
-
 .list {
-}
-.list li {
-  font-size: 18px;
-  margin: 0 0 15px 0;
+  font-size: 24px;
+  margin: 0 0 20px 0;
 }
 
-.list li:first-child {
-  color: green;
+.list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+  margin: 0 10px 0 0;
 }
 
-.list li:last-child {
-  color: firebrick;
-  font-weight: 700;
+.list li:hover::before {
+  background-color: aqua;
 }
 
-.list li:nth-child(even) {
-  text-transform: uppercase;
-}
-
-.list li:nth-child(3) {
-  text-decoration: line-through;
+.list li::after {
+  content: "";
 }
