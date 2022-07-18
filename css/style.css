@@ -83,31 +83,22 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.block {
-  border: 5px solid red;
-  max-width: 800px;
-  margin: 0px auto;
-  height: 800px;
-}
-
-.block div {
-  line-height: 50px;
+.list {
   font-size: 18px;
-  font-weight: 700;
-  text-align: center;
 }
 
-.block__1 {
-  background-color: aqua;
+.list li {
+  margin: 0px 0px 10px 0;
+  position: relative;
+  padding: 0 0 0 30px;
 }
 
-.block__2 {
-  background-color: blue;
-  position: fixed;
-  top: 0;
+.list li::before {
+  content: "";
+  background: url(../img/li.svg) 0 0 no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
   left: 0;
-}
-
-.block__3 {
-  background-color: blueviolet;
 }
