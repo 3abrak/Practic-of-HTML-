@@ -124,3 +124,15 @@ body {
 .block .block_text {
   font-size: 80px;
 }
+.block.block--big {
+  font-size: 100px;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+  font-size: 20px;
+}
+.link:hover {
+  color: green;
+}

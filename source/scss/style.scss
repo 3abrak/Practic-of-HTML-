@@ -112,11 +112,22 @@ body {
   > p {
     color: blue;
   }
-
   span {
     color: aqua;
   }
   .block_text {
     font-size: 80px;
+  }
+  &.block--big {
+    font-size: 100px;
+  }
+}
+.link {
+  color: blue;
+  text-decoration: underline;
+  font-size: 20px;
+
+  &:hover {
+    color: green;
   }
 }
