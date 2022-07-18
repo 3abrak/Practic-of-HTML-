@@ -1,114 +1,27 @@
 @import "_header.scss";
+@import "_nullstyle.scss";
 
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-:focus,
-:active {
-  outline: none;
-}
-a:focus,
-a:active {
-  outline: none;
+%tplborder {
+  font-size: 35px;
+  border-bottom: 5px dashed blue;
 }
 
-nav,
-footer,
-header,
-aside {
-  display: block;
+@mixin fontz($f) {
+  font-size: $f;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-button {
-  cursor: pointer;
-}
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-a,
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-ul li {
-  list-style: none;
-}
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
+$fz: 40px;
+$color_1: #0000;
 
 body {
   padding: 30px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.list {
-  font-size: 18px;
-}
-
-.list li {
-  margin: 0px 0px 10px 0;
-  position: relative;
-  padding: 0 0 0 30px;
-}
-
-.list li::before {
-  content: "";
-  background: url(../img/li.svg) 0 0 no-repeat;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 5px;
-  left: 0;
-}
-
 .block {
+  width: 300px/960px * 100%;
+  background-color: #666;
   padding: 30px;
-  font-size: 50px;
-  line-height: 60px;
   > p {
     color: blue;
   }
@@ -116,18 +29,25 @@ body {
     color: aqua;
   }
   .block_text {
-    font-size: 80px;
-  }
-  &.block--big {
-    font-size: 100px;
+    font-size: $fz;
   }
 }
 .link {
   color: blue;
   text-decoration: underline;
-  font-size: 20px;
+  font-size: $fz;
+  .block & {
+    font-size: $fz;
+  }
 
   &:hover {
     color: green;
   }
+  @extend %tplborder;
+}
+
+.link-2 {
+  @extend %tplborder;
+  border-bottom: 5px dashed rgb(85, 153, 21);
+  @include fontz(100px);
 }
