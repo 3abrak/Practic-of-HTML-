@@ -84,3 +84,54 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  padding: 50px;
+}
+
+.block__row {
+  border: 20px solid #ece89d;
+  margin: 0 0 20px 0;
+}
+.block__colum {
+  border: 20px solid #5e5373;
+}
+.block__item {
+  background-color: #18b5a4;
+  padding: 50px;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+}
+.block__list {
+  display: flex;
+  align-items: center;
+}
+.block__list li {
+  margin: 0 15px 0 0;
+}
+.block__list li:last-child {
+  margin: 0 0 0 0;
+}
+.block__info {
+  position: relative;
+  padding: 0 0 0 25px;
+  line-height: 15px;
+}
+.block__info_y::before {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  background-color: #ece89d;
+  border: 5px solid #ece89d;
+}
+.block__info_p::before {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  background-color: #5e5373;
+  border: 5px solid #5e5373;
+}

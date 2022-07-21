@@ -1,2 +1,66 @@
 @import "_header.scss";
 @import "_nullstyle.scss";
+
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  padding: 50px;
+}
+.block {
+  &__row {
+    border: 20px solid #ece89d;
+    margin: 0 0 20px 0;
+  }
+
+  &__colum {
+    border: 20px solid #5e5373;
+  }
+
+  &__item {
+    background-color: #18b5a4;
+    padding: 50px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    li {
+      margin: 0 15px 0 0;
+      &:last-child {
+        margin: 0 0 0 0;
+      }
+    }
+  }
+
+  &__info {
+    position: relative;
+    padding: 0 0 0 25px;
+    line-height: 15px;
+    &_y {
+      &::before {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        background-color: #ece89d;
+        border: 5px solid #ece89d;
+      }
+    }
+
+    &_p {
+      &::before {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        background-color: #5e5373;
+        border: 5px solid #5e5373;
+      }
+
+      &_g {
+      }
+    }
+  }
+}
