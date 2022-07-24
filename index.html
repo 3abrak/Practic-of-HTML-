@@ -9,32 +9,204 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="block">
-        <div class="block__row">
-          <div class="block__colum">
-            <div class="block__item">1</div>
-          </div>
-          <div class="block__colum">
-            <div class="block__item">2</div>
-          </div>
-          <div class="block__colum">
-            <div class="block__item">3</div>
+      <div class="content">
+        <div class="hi">
+          <div class="container">
+            <div class="hi__row">
+              <div class="hi__body">
+                <div class="hi__title">Привет, друг!</div>
+                <ul class="hi__list">
+                  <li>Ты станешь сверхразумом!</li>
+                  <li>У тебя всё получиться!</li>
+                  <li>Ты в конце концов достигнешь своей цели!</li>
+                  <li>Ты молодец!</li>
+                </ul>
+              </div>
+              <div class="hi__image">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <ul class="block__list">
-          <li>
-            <div class="block__info block__info_y">Flex-контейнер</div>
-          </li>
-          <li>
-            <div class="block__info block__info_p">Flex-элемент</div>
-          </li>
-          <li>
-            <div class="block__info block__info_g">
-              Сожерэимое Flex-элемента(контент)
+        <div class="what">
+          <div class="container">
+            <div class="what__row">
+              <div class="what__image">
+                <img src="../practic HTML/img/image_2.jpg" alt="" />
+              </div>
+              <div class="what__body">
+                <div class="what__title title">Что такое FlexBox?</div>
+                <div class="what__text">
+                  <p>
+                    FlexBox - это целый модуль содержащий в себе набор свойств и
+                    их значений как для родителей fkex-контейнера так и для его
+                    дочерных элементов flex-элементов.
+                  </p>
+                  <p>
+                    Основным преймуществом гибкой FLEX разметки является
+                    возможность изменять ширину/высоту пространство вокруг и
+                    порядок flex-элементов. Для того чтоьы найлучшим образом
+                    заполнить доступное пространство flex-контейнера.
+                  </p>
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="colums">
+          <div class="container">
+            <div class="colums__title title">Колонки с flex-контейнерами</div>
+            <div class="colums__row">
+              <div class="colums__column">
+                <div class="colums__item item">
+                  <div class="item__row">
+                    <div class="item__image">
+                      <img src="../practic HTML/img/Naruto.jpg" alt="" />
+                    </div>
+                    <div class="item__body">
+                      <div class="item__title">Узумаки Наруто</div>
+                      <div class="item__text">
+                        Узумаки Наруто — шиноби Конохагакуре из клана Узумаки.
+                        Он стал Джинчурики Кьюби в день своего рождения, в
+                        результате чего, из-за нелёгкой судьбы, другие жители
+                        деревни сторонились его в течение детства мальчика.
+                        Присоединившись к команде 7, Наруто начал упорно
+                        трудиться, чтобы добиться признания в Конохе и, тем
+                        самым, воплотить свою мечту стать Хокаге.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="colums__column">
+                <div class="colums__item item">
+                  <div class="item__row">
+                    <div class="item__image">
+                      <img src="../practic HTML/img/Sasuke.jpg" alt="" />
+                    </div>
+                    <div class="item__body">
+                      <div class="item__title">Учиха Саске</div>
+                      <div class="item__text">
+                        Учиха Сaске — один из последних выживших членов клана
+                        Учиха из Конохагакуре. После того, как его старший брат
+                        Итачи уничтожил весь их клан, Саске поставил перед собой
+                        жизненную цель отомстить за клан и семью, убив Итачи. Он
+                        попадает в команду 7, когда становится шиноби, и,
+                        благодаря состязаниям со своим соперником и лучшим
+                        другом, Узумаки Наруто, начинает оттачивать свои навыки
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="colums__column">
+                <div class="colums__item item">
+                  <div class="item__row">
+                    <div class="item__image">
+                      <img src="../practic HTML/img/Kakashi.jpg" alt="" />
+                    </div>
+                    <div class="item__body">
+                      <div class="item__title">Хатаке Какаши</div>
+                      <div class="item__text">
+                        Хатаке Какаши — шиноби Конохагакуре из клана Хатаке.
+                        Широко известный как Шаринган но Какаши (写輪眼のカカシ,
+                        "Какаши Шарингана"), он является одним из самых
+                        одарённых ниндзя Конохи, к которому регулярно обращаются
+                        за советом или руководством несмотря на его личное
+                        неприятие ответственности.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="colums__column">
+                <div class="colums__item item">
+                  <div class="item__row">
+                    <div class="item__image">
+                      <img src="../practic HTML/img/Sakura.jpg" alt="" />
+                    </div>
+                    <div class="item__body">
+                      <div class="item__title">Харуно Сакура</div>
+                      <div class="item__text">
+                        Харуно Сакура (после замужества — Учиха Сакура) — Джонин
+                        из Конохагакуре и главная героиня сериала. Став частью
+                        команды 7, девушка быстро осознаёт свою
+                        неподготовленность к суровой жизни ниндзя и полагается
+                        на своих товарищей по команде. После тренировок с
+                        Тсунаде, Сакура превращается в квалифицированную
+                        куноичи.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vertical">
+          <div class="container">
+            <div class="vertical__title title">Вертикальное выравнивание</div>
+            <div class="vertical__body">
+              <div class="vertical__row">
+                <div class="vertical__column">
+                  <div class="vertical__item">
+                    <div class="vertical__subtitle">Буду рад</div>
+                    <div class="vertical__label">Твоим стараниям</div>
+                    <div class="vertical__text">
+                      <p>
+                        Открой для себя невероятный мир Аниме вместе с одними из
+                        самых известных персонажей.
+                      </p>
+                    </div>
+                    <a href="" class="vertical__btn">Найти инфу</a>
+                  </div>
+                </div>
+                <div class="vertical__column">
+                  <div class="vertical__item">
+                    <div class="vertical__subtitle">Буду рад</div>
+                    <div class="vertical__label">Твоей улыбке</div>
+                    <div class="vertical__text">
+                      <p>
+                        Начиная свой путь вместе с этим странным увлечением ты
+                        узнаешь много людей.
+                      </p>
+                      Ты сможешь проникнуться многими историями. У тебя всегда
+                      будет воодушевляющий персонаж. В Аниме очень много пестрых
+                      и интересных персонажей.
+                    </div>
+                    <a href="" class="vertical__btn">Известные персонажи</a>
+                  </div>
+                </div>
+                <div class="vertical__column">
+                  <div class="vertical__item">
+                    <div class="vertical__subtitle">Буду рад</div>
+                    <div class="vertical__label">Твоему мнению</div>
+                    <div class="vertical__text">
+                      <p>
+                        Самое интересное это познавать все эти истории и
+                        понимать, что они не так уж и далеки от обыной жизни. А
+                        после всего этого рассказать о тех чувствах, что
+                        испытал/а во время просмотра этой необьятной вселенной.
+                      </p>
+                    </div>
+                    <a href="" class="vertical__btn">поделиться</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <footer class="footer">
+        <div class="conteiner">
+          <div class="footer__row">
+            <div class="footer__text">Начинающий программист 2022</div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
