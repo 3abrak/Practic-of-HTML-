@@ -141,19 +141,21 @@ h6 {
   margin: 10px 4px;
 }
 .weatherDesk__weather {
-  display: flex;
+  display: inline-block;
   margin: 0 0 10px 4px;
   color: #8e8c8f;
   flex-direction: column;
 }
-.weatherDesk__weather::after {
-  content: "";
-  display: flex;
-  padding: 0 0 0 520px;
-  width: 20px;
-  height: 60px;
-  background: url(../img/www.unian.net_pogoda_85468-zhitomir.png) bottom center no-repeat;
-}
 .weatherDesk__climat {
   display: flex;
+  flex-direction: column;
+  margin: 0 0 20px 0;
+}
+.weatherDesk__climat::after {
+  content: "";
+  display: flex;
+  margin: -60px 0 0 400px;
+  width: 60px;
+  height: 60px;
+  background: url(../img/www.unian.net_pogoda_85468-zhitomir.png) bottom center no-repeat;
 }
