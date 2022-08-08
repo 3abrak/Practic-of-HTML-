@@ -80,6 +80,8 @@ ul {
 }
 
 .sidebar {
+  grid-column: 2/3;
+  margin: 0;
   background-color: rgb(141, 0, 0);
   padding: 30px 15px;
   margin: 0 0 30px 0;
@@ -98,18 +100,9 @@ ul {
   }
 }
 .content {
+  grid-column: 3/4;
+  padding: 0 0 0 30px;
   &__title {
-  }
-
-  @media (min-width: 992px) {
-    .sidebar {
-      grid-column: 2/3;
-      margin: 0;
-    }
-    .content {
-      grid-column: 3/4;
-      padding: 0 0 0 30px;
-    }
   }
 
   &__gallery {
