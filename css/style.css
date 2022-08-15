@@ -85,186 +85,9 @@ h6 {
   font-weight: 400;
 }
 
-<<<<<<< HEAD
 .greeting {
   font-size: 50px;
   margin: 15px 0 0 15px;
-=======
-<<<<<<< HEAD
-body {
-  background-color: #555;
-}
-
-a {
-  color: rgb(53, 12, 238);
-}
-
-h1 {
-  font-size: 40px;
-  line-height: 1;
-  margin: 0 0 50px 0;
-}
-
-h2 {
-  font-size: 30px;
-  line-height: 1;
-  margin: 0 0 20px 0;
-}
-
-ul {
-  list-style: none;
-}
-
-.wrapper {
-  min-height: 100%;
-  display: grid;
-  grid-template: minmax(100px, auto) 1fr minmax(70px, auto)/1fr;
-  grid-template-areas: "header" "main" "footer";
-}
-
-.header {
-  grid-area: header;
-  padding: 15px;
-  background-color: rgb(53, 12, 238);
-  display: grid;
-  grid-template: 1fr/1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
-}
-.header__logo {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #fff;
-  align-items: center;
-  grid-column: 2/3;
-}
-.header__list {
-  display: grid;
-  grid-auto-flow: column;
-  justify-items: end;
-}
-.header__link {
-  color: #fff;
-  font-size: 18px;
-}
-.main {
-  padding: 30px 15px;
-}
-
-@media (min-width: 992px) {
-  .main {
-    grid-area: main;
-    display: grid;
-    grid-template: 1fr/1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
-  }
-}
-.sidebar {
-  grid-column: 2/3;
-  margin: 0;
-  background-color: rgb(141, 0, 0);
-  padding: 30px 15px;
-  margin: 0 0 30px 0;
-}
-.sidebar__list li {
-  margin: 0 0 15px 0;
-}
-.sidebar__link {
-  color: #fff;
-  font-size: 20px;
-}
-
-.content {
-  grid-column: 3/4;
-  padding: 0 0 0 30px;
-}
-.content__gallery {
-  margin: 0 0 30px 0;
-}
-.gallery__items {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.gallery__item {
-  position: relative;
-  padding: 0 0 85% 0;
-}
-.gallery__item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.gallery__item_big {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.products__items {
-  display: grid;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  row-gap: 50px;
-  grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
-  grid-auto-rows: 1fr;
-}
-.products__item {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template: auto 1fr minmax(40px/auto)/1fr;
-}
-.products__image {
-  position: relative;
-  padding: 0 0 90% 0;
-  margin: 0 0 20px 0;
-}
-.products__image img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.products__name {
-  font-size: 40px;
-  color: #fff;
-  line-height: 30px;
-  margin: 0 0 20px 0;
-}
-.products__button {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-decoration: none;
-  line-height: 40px;
-  justify-self: start;
-  background-color: #77608d;
-  padding: 0 20px;
-}
-
-.footer {
-  background-color: rgb(153, 187, 3);
-  display: grid;
-  grid-area: footer;
-  padding: 15px;
-  align-items: center;
-  grid-template: 1fr/1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
-}
-.footer__copy {
-  grid-column: 2/3;
-}
-.footer__text {
-  grid-column: 3/4;
-  text-align: right;
-=======
-.conteiner {
-  width: 100%;
-  height: 500px;
->>>>>>> 104e7588cdeee69aaa79d49c244171a4dbbc27b7
 }
 
 .content {
@@ -287,7 +110,6 @@ ul {
   cursor: pointer;
   background-color: rgb(206, 17, 17);
 }
-<<<<<<< HEAD
 .menu {
   display: inline-block;
 }
@@ -328,14 +150,4 @@ ul {
 
 .menu__link:hover {
   text-decoration: none;
-=======
-.weatherDesk__climat::after {
-  content: "";
-  display: flex;
-  margin: -60px 0 0 400px;
-  width: 60px;
-  height: 60px;
-  background: url(../img/www.unian.net_pogoda_85468-zhitomir.png) bottom center no-repeat;
->>>>>>> c490925c0f521011408eb11309c993dad30ddcff
->>>>>>> 104e7588cdeee69aaa79d49c244171a4dbbc27b7
 }
