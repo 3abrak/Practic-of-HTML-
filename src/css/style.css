@@ -86,34 +86,12 @@ h6 {
 }
 
 .greeting {
-  font-size: 50px;
-  margin: 15px 0 0 15px;
-}
-
-.content {
-  margin: 15px 0 0 15px;
-  font-size: 30px;
+  padding: 15px 0 15px 0;
 }
 
 .menu {
   display: inline-block;
 }
-.menu__button {
-  color: #fff;
-  align-items: center;
-  width: 100px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  transform: all 0.3s ease 0;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: rgb(206, 17, 17);
-}
-.menu {
-  display: inline-block;
-}
-
 .menu._active .menu__list {
   display: block;
 }
@@ -126,28 +104,24 @@ h6 {
   display: block;
 }
 
-.menu__button span:first-child {
+.menuu__button span:first-child {
   display: block;
 }
 
-.menu__button span:last-child {
+.menuu__button span:last-child {
   display: none;
 }
 
 .menu__list {
-  background-color: #77608d;
+  background-color: rgb(50, 2, 88);
   padding: 15px;
 }
 
 .menu__list li:not(:last-child) {
-  margin: 0px 0px 15px 0px;
+  margin: 0 0 15px 0;
 }
 
 .menu__link {
   color: #fff;
   font-size: 16px;
-}
-
-.menu__link:hover {
-  text-decoration: none;
 }
